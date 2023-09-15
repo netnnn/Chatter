@@ -24,7 +24,7 @@ img {
     height: 80px;
     align-items: center;
     display: flex;
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(50, 50, 50);
 }
 
 #current_chat_name_area>img {
@@ -42,7 +42,7 @@ img {
 
 #chat_area {
     position: absolute;
-    background-color: rgb(42, 42, 42);
+    background-color: rgb(75, 75, 75);
     top: 80px;
     bottom: 50px;
     width: 100%;
@@ -61,7 +61,7 @@ img {
 
 #input_area {
     position: absolute;
-    background-color: rgb(42, 42, 42);   
+    background-color: rgb(50, 50, 50);   
     height: 50px;
     bottom: 0px;
     width: 100%;
@@ -96,10 +96,9 @@ img {
 #left_screen {
     position: absolute;
     top: 0px;
-    right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(40, 40, 40);
     border: 1.5px;
     border-style: solid;
     border-right-color: #b0b0b049;
@@ -210,10 +209,10 @@ img {
     right: 0px;
     margin-right: 10px;
     padding: auto;
-}
+}   
 
 #add_button:active {
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(30, 30, 30);
 }
 
 .chat {
