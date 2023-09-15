@@ -1,11 +1,7 @@
 import "./login.css"
 import { Link } from "react-router-dom";
-import { useRef, useEffect } from "react";
 
 function Login(props) {
-    const Name_input = useRef(null);
-    const Password_input = useRef(null);
-
     return (
       <>
         <div id="container">
@@ -18,7 +14,6 @@ function Login(props) {
                 type="text"
                 className="form-control"
                 id="inputName"
-                ref={Name_input}
               ></input>
             </div>
           </div>
@@ -31,7 +26,6 @@ function Login(props) {
                 type="password"
                 className="form-control"
                 id="inputPassword"
-                ref={Password_input}
               ></input>
               <div id="incorrect"></div>
             </div>
