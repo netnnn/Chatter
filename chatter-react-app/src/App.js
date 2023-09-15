@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import Register from "./Register/Register";
+import Main from "./Main/Main";
+import Login from "./Login/Login";
+
+const [LoggedUser, SetLoggedUser] = useState("");
+const [file, SetFile] = useState("");
+const [Mode, SetMode] = useState("");
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={<Login SetLoggedUser={SetLoggedUser} />}
+        ></Route>
+        <Route
+          path="/Register"
+          element={<Register SetFile={SetFile}/>}></Route>
+        <Route
+          path="/Main"
+          element={<Main LoggedUser={LoggedUser} file={file} Mode={Mode} SetMode={SetMode}/>}
+        ></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
