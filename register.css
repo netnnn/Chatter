@@ -1,0 +1,42 @@
+#container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+
+    height: fit-content;
+    width: 50%;
+
+    border-radius: 20pt;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    background: rgb(236, 237, 237);
+    box-shadow: 0 0 10px 0px black
+
+}
+
+.row{
+    margin: 15px;
+}
+
+.row>img {
+    width: 25%;
+}
+
+.alink{
+    color:rgb(35, 191, 139);
+}
+
+#registerbutton{
+    position: relative;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#login{
+    text-align: center;
+    position: relative;
+}
