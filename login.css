@@ -1,0 +1,39 @@
+
+
+#container{
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 30%;
+    margin: auto;
+
+    height: fit-content;
+    width: 40%;
+
+    border-radius: 25pt;
+    border: 1px;
+    border-color: white;
+    border-style: solid;
+    background: rgb(236, 237, 237);
+    box-shadow: 0 0 10px 0 black;
+}
+
+#register{
+    text-align: center;
+    position: relative;
+}
+
+#loginbutton{
+    position: relative;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.row{
+    margin: 15px;
+}
+
+.alink{
+    color:rgb(35, 191, 139);
+}
